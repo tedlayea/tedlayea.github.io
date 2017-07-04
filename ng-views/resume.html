@@ -1,0 +1,97 @@
+<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Click here to choose
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li><input ng-model="vm.display" type="radio" name="optionselect" ng-value=1 >TECHNICAL SKILLS</li>
+      <li><input ng-model="vm.display" type="radio" name="optionselect" ng-value=2 >RELEVANT EXPERIENCE</li>
+      <li><input ng-model="vm.display" type="radio" name="optionselect" ng-value=3 >PROFESSIONAL EXPERIENCE</li>
+      <li><input ng-model="vm.display" type="radio" name="optionselect" ng-value=4 >EDUCATION</li>
+      <li><input ng-model="vm.display" type="radio" name="optionselect" ng-value=5 >CERTIFICATION</li>
+      <li class="divider"></li>
+      <li><input ng-model="vm.display" type="radio" name="optionselect" ng-value=6 >VOLUNTEER ACTIVITY</li>
+    </ul>
+  </div><br>
+</div>
+
+<div class="container" ng-show="vm.display=='1'">
+  <h2>TECHNICAL SKILLS</h2>
+  <ul class="list-group">
+    <li class="list-group-item">Front-end: HTML | CSS | JavaScript | jQuery | Bootstrap</li>
+    <li class="list-group-item">Back-end: Ruby | Sinatra | Ruby on Rails | Angular | Express | MEAN | REACT</li>
+    <li class="list-group-item">Database: MS-SQL Server | PostgreSQL | MS Access</li>
+    <li class="list-group-item">Other Tools: CLI | MS Office | Project Management | Git | Github | Visual Studio</li>
+    <li class="list-group-item">Platforms: Windows | Linux | Mac OS </li>
+  </ul>
+</div>
+
+<div ng-show="vm.display=='2'">
+  <div class="container">
+    <h2>RELEVANT EXPERIENCE</h2>
+    <h4>General Assembly, Washington, DC</h4>
+    <h4>Web Development Immersive Student</h5>
+    <h5>May 2017 – July 2017</h5>
+    <ul class="list-group">
+      <li class="list-group-item">Twelve-week full-time full-stack Web Development Immersive program providing experience with the
+      latest front-end and back-end programming languages tools, and frameworks including HTML, CSS, Javascript, jQuery, PostgreSQL, MongoDB, Ruby, Ruby on Rails, AngularJS, ReactJS, Git, and Github.</li>
+      <li class="list-group-item">Developed a personal portfolio and also collaboratively focused in-class projects, including:
+        <ul>
+          <li class="list-group-item">1. Hangman game in which players can spent their time by testing their knowledge about world heritage. Depending on the number of errors, different animation will be displayed.</li>
+          <li class="list-group-item">2.  Web application which helps to remember where you parked, so it save the car location with just click and take you to your car from any other position with just click. You can see your recent history, add/edit/delete your favorites.</li>
+          <li class="list-group-item">3.  Web application which prevent you from DUI charges by checking your blood alcohol content after you drink, or even suggest you how much you have to drink in order to be safe. It also recommends you breweries and beer based on your current location, abv and IBU.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h4>Jimma University, Jimma, Ethiopia</h4>
+    <h5>2015-2016 and 2011- 2012</h5>
+    <ul class="list-group">
+      <li class="list-group-item">Designed different functionality and interface for a website to facilitate learning-teaching system.</li>
+      <li class="list-group-item">Created website using different tools in order to fulfill the requirement listed in the design phase.</li>
+      <li class="list-group-item">Tested the website functionality before production and during the production phase.</li>
+    </ul>
+  </div>
+</div>
+<div class="container" ng-show="vm.display=='3'">
+  <h2>PROFESSIONAL EXPERIENCE</h2>
+  <h4>Jimma University, Jimma, Ethiopia</h4>
+  <h4>Instructor and Researcher</h4>
+  <h5>2015-2016 and 2011- 2012</h5>
+  <ul class="list-group">
+    <li class="list-group-item">Delivered three courses for engineering students ranging from first-year to third-year students.</li>
+    <li class="list-group-item">Led a team of six in modularizing and reviewing curriculum to improve the current education system.</li>
+    <li class="list-group-item">Coordinated and managed ten plus courses, programs, and events.</li>
+    <li class="list-group-item">Wrote three plus project and research proposal by collaboration with other Universities and stakeholders.</li>
+    <li class="list-group-item">Advised 30+ students in their project and also to solve barriers to their education.</li>
+    <li class="list-group-item">Supervised 20+ students in CBTP program to propose appropriate solutions for the community problems.</li>
+    <li class="list-group-item">Evaluator and moderator for more than 100 plus mini and final year projects for different batches.</li>
+    <li class="list-group-item">Experienced in managing 300+ student records in the database such as attendance, evaluations and grading.</li>
+  </ul>
+</div>
+
+<div class="container" ng-show="vm.display=='4'">
+  <h2>EDUCATION</h2>
+  <ul class="list-group">
+    <li class="list-group-item">General Assembly, Washington, DC, Full Stack Web Development, May 2017 – July 2017</li>
+    <li class="list-group-item">University of Trento, Italy M.Sc. in Engineering, July 2017-March 2015</li>
+  </ul>
+</div>
+<div class="container" ng-show="vm.display=='5'">
+  <h2>CERTIFICATION</h2>
+  <ul class="list-group">
+    <li class="list-group-item">Microsoft Certified in Querying with Transact- SQL, August 2016</li>
+  </ul>
+</div>
+<div class="container" ng-show="vm.display=='6'">
+  <h2>VOLUNTEER ACTIVITY</h2>
+  <h4>Jimma City Volunteer Activity Club, Jimma, Ethiopia</h4>
+  <h5>September 2015 – January 2016</h5>
+  <ul class="list-group">
+    <li class="list-group-item">Initiated and organized continuous awareness creation campaign about waste management and environmental protection by organizing more than 150 students, staff and government officials.</li>
+    <li class="list-group-item">Conducted and analyzed survey to identify community’s problems, and interact with stakeholders.</li>
+    <li class="list-group-item">Performed GAP Analysis to show the current problems and proposed solutions.</li>
+    <li class="list-group-item">Suggested measures and recommendations to improve and optimize the current system.</li>
+  </ul>
+</div>

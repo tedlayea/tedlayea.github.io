@@ -1,0 +1,27 @@
+<div class="section">
+  <input ng-model="vm.employer" type="radio" name="optionselect" ng-value=false >Are you employer, looking for a great devloper:
+</br><input ng-model="vm.employer" type="radio" name="optionselect" ng-value=true >  Are you client, business man or any professional who want to build or enhance your webite?
+
+  <div ng-hide="vm.employer">
+    <p>Your name :<input ng-model="vm.name" value="0"></p>
+    <p>Your company :<input ng-model="vm.company" value="0"></p>
+    Your message :<textarea ng-model="vm.message" value="0"></textarea>
+   </br><button ng-click="vm.sendemail()">Send</button>
+    <!-- <a href="#"> Send</a> //Associate this with your email -->
+    <p ng-show="vm.notice">As per this result, {{vm.message}}</p>
+  </div>
+  <div ng-show="vm.employer">
+    <p>Your name :<input ng-model="vm.name" value="0"></p>
+    <p>Your buiness /profession :<input ng-model="vm.company" value="0"></p>
+    Your message :<textarea ng-model="vm.message" value="0"></textarea>
+    </br><button ng-click="vm.sendemail()">Send</button>
+    <!-- <a href="#"> Send</a> //Associate this with your email -->
+    <p ng-show="vm.notice">As per this result, {{vm.message}}</p>
+  </div>
+</div>
+
+
+<!-- <li><img  id="js"src="img/js.png" alt="Tedla photo displayed"></li> -->
+
+<!-- <a href="mailto:tedlayea@gmail.com?Subject=Hello%20again" target="_top">Send Mail</a>
+</p> -->
