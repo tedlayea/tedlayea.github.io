@@ -1,20 +1,25 @@
-<div class="container">
-  <div class="dropdown">
+<div class="resume">
+  <!-- <div class="dropdown">
     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Click here to choose
     </button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-      <li><input ng-model="vm.display" type="radio" name="optionselect" ng-value=1 >TECHNICAL SKILLS</li>
-      <li><input ng-model="vm.display" type="radio" name="optionselect" ng-value=2 >RELEVANT EXPERIENCE</li>
-      <li><input ng-model="vm.display" type="radio" name="optionselect" ng-value=3 >PROFESSIONAL EXPERIENCE</li>
-      <li><input ng-model="vm.display" type="radio" name="optionselect" ng-value=4 >EDUCATION</li>
-      <li><input ng-model="vm.display" type="radio" name="optionselect" ng-value=5 >CERTIFICATION</li>
+
       <li class="divider"></li>
       <li><input ng-model="vm.display" type="radio" name="optionselect" ng-value=6 >VOLUNTEER ACTIVITY</li>
     </ul>
-  </div><br>
+  </div><br> -->
+  <input ng-model="vm.display" type="radio" name="optionselect" ng-value=1 >TECHNICAL SKILLS
+  <input ng-model="vm.display" type="radio" name="optionselect" ng-value=2 >RELEVANT EXPERIENCE
+  <input ng-model="vm.display" type="radio" name="optionselect" ng-value=3 >PROFESSIONAL EXPERIENCE
+  <input ng-model="vm.display" type="radio" name="optionselect" ng-value=5 >CERTIFICATION
+  <input ng-model="vm.display" type="radio" name="optionselect" ng-value=4 >EDUCATION
+</div>
+<div ng-hide="vm.display" id="resume_image">
+    <img  src="img/hangman.png" alt="header photo displayed">
 </div>
 
-<div class="container" ng-show="vm.display=='1'">
+
+<div ng-show="vm.display=='1'">
   <h2>TECHNICAL SKILLS</h2>
   <ul class="list-group">
     <li class="list-group-item">Front-end: HTML | CSS | JavaScript | jQuery | Bootstrap</li>
@@ -26,7 +31,7 @@
 </div>
 
 <div ng-show="vm.display=='2'">
-  <div class="container">
+  <div >
     <h2>RELEVANT EXPERIENCE</h2>
     <h4>General Assembly, Washington, DC</h4>
     <h4>Web Development Immersive Student</h5>
@@ -44,7 +49,7 @@
     </ul>
   </div>
 
-  <div class="container">
+  <div >
     <h4>Jimma University, Jimma, Ethiopia</h4>
     <h5>2015-2016 and 2011- 2012</h5>
     <ul class="list-group">
@@ -54,7 +59,7 @@
     </ul>
   </div>
 </div>
-<div class="container" ng-show="vm.display=='3'">
+<div ng-show="vm.display=='3'">
   <h2>PROFESSIONAL EXPERIENCE</h2>
   <h4>Jimma University, Jimma, Ethiopia</h4>
   <h4>Instructor and Researcher</h4>
@@ -71,20 +76,20 @@
   </ul>
 </div>
 
-<div class="container" ng-show="vm.display=='4'">
+<div ng-show="vm.display=='4'">
   <h2>EDUCATION</h2>
   <ul class="list-group">
     <li class="list-group-item">General Assembly, Washington, DC, Full Stack Web Development, May 2017 – July 2017</li>
     <li class="list-group-item">University of Trento, Italy M.Sc. in Engineering, July 2017-March 2015</li>
   </ul>
 </div>
-<div class="container" ng-show="vm.display=='5'">
+<div ng-show="vm.display=='5'">
   <h2>CERTIFICATION</h2>
   <ul class="list-group">
     <li class="list-group-item">Microsoft Certified in Querying with Transact- SQL, August 2016</li>
   </ul>
 </div>
-<div class="container" ng-show="vm.display=='6'">
+<div ng-show="vm.display=='6'">
   <h2>VOLUNTEER ACTIVITY</h2>
   <h4>Jimma City Volunteer Activity Club, Jimma, Ethiopia</h4>
   <h5>September 2015 – January 2016</h5>

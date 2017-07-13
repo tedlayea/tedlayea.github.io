@@ -20,7 +20,45 @@ font-weight: 600;
   font-weight: 600;
   text-align: center;
 }
+.resume{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
 /*#js{
   position: absolute;
   left: 35%
 }*/
+@-webkit-keyframes resume_animation {
+  0% {
+    background-image: url("http://i.imgur.com/18tYgiT.png");
+  }
+  40% {
+    background-image: url("http://i.imgur.com/tM6B5lR.png");
+  }
+  70% {
+    background-image: url("http://i.imgur.com/lo8EqKO.png");
+  }
+  100% {
+    background-image: url("http://i.imgur.com/lo8EqKO.png");
+  }
+}
+
+#resume_image {
+  animation-name: resume_animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /*animation-direction: alternate;*/
+  width: 100%
+
+}
+
+#resume_image img {
+  opacity: 0.0;
+filter: alpha(opacity=50);
+}
+.col-sm-4 img {
+width:300px;
+}
