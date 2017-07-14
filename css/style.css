@@ -33,26 +33,26 @@ font-weight: 600;
 }*/
 @-webkit-keyframes resume_animation {
   0% {
-    background-image: url("http://i.imgur.com/18tYgiT.png");
+    background-image: url("http://i.imgur.com/fVpzk6R.png");
   }
-  40% {
-    background-image: url("http://i.imgur.com/tM6B5lR.png");
+  60% {
+    background-image: url("http://i.imgur.com/TmyhkyU.png");
   }
-  70% {
-    background-image: url("http://i.imgur.com/lo8EqKO.png");
+  80% {
+    background-image: url("http://i.imgur.com/fVpzk6R.png");
   }
   100% {
-    background-image: url("http://i.imgur.com/lo8EqKO.png");
+    background-image: url("http://i.imgur.com/fVpzk6R.png");
   }
 }
 
 #resume_image {
   animation-name: resume_animation;
-  animation-duration: 3s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   /*animation-direction: alternate;*/
-  width: 100%
-
+  width: 100%;
+  height: 800px;
 }
 
 #resume_image img {
