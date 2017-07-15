@@ -3,32 +3,34 @@
 </div>
 <div class="row">
   <div class="col-sm-4" >
-    <h3>Project 1: Hangman</h3>
-    <p><input ng-model="vm.display" type="radio" name="optionselect" ng-value=1 >Description</p>
-    <div>
-      <p ng-show="vm.display=='1'"> Hangman game in which players can spent their time by testing their knowledge about world heritage.
-      Depending on the number of errors, different animation will be displayed.</p>
-      <img src="img/hangman.png" alt="Hangman photo displayed">
-    </div>
-  </div>
-  <div class="col-sm-4" >
     <h3>Project 2: Tedpark </h3>
     <p>  <input ng-model="vm.display" type="radio" name="optionselect" ng-value=2 >Description</p>
     <div>
       <p ng-show="vm.display=='2'"> Web application which helps to remember where you parked, so it save the car location with just
           click and take you to your car from any other position with just click. You can see your recent
-           history, add/edit/delete your favorites.</p>
-      <img src="img/tedpark.gif" alt="Tedpark photo displayed">
+           history, add/edit/delete your favorites.</br> Technology: HTML, CSS, JavaScript, Ruby,Rails</p>
+      <img id="tedpark" src="img/tedpark.gif" alt="Tedpark photo displayed">
+    </div>
+  </div>
+  <div class="col-sm-4" >
+    <h3>Project 1: Hangman</h3>
+    <p><input ng-model="vm.display" type="radio" name="optionselect" ng-value=1 >Description</p>
+    <div>
+      <p ng-show="vm.display=='1'"> Hangman game in which players can spent their time by testing their knowledge about world heritage.
+      Depending on the number of errors, different animation will be displayed.</br>Technology: HTML, CSS, JavaScript,jQuery</p>
+      <img id="beermood"  src="img/hangman.gif" alt="Hangman photo displayed">
+    </div>
+    <h3>Project 3: BeerMood </h3>
+    <p>  <input ng-model="vm.display" type="radio" name="optionselect" ng-value=3 >Description</p>
+    <div id="project3">
+      <p ng-show="vm.display=='3'">Web application which prevent you from DUI charges by checking your blood alcohol content after you drink,or even suggest you how much you have to drink in order to be safe. It also recommends you breweries
+      and beer based on your current location, abv and IBU.</br> Technology: HTML, CSS, JavaScript,jQuery,Rails,Angular,API</p>
+      <img id="beermood" src="img/beermood.gif" alt="BeerMood photo displayed">
     </div>
   </div>
 
-</div>
-<div  >
-  <h3>Project 3: BeerMood </h3>
-  <p>  <input ng-model="vm.display" type="radio" name="optionselect" ng-value=3 >Description</p>
-  <div>
-    <p ng-show="vm.display=='3'">Web application which prevent you from DUI charges by checking your blood alcohol content after you drink,or even suggest you how much you have to drink in order to be safe. It also recommends you breweries
-    and beer based on your current location, abv and IBU.</p>
-    <img  src="img/beermood.gif" alt="BeerMood photo displayed">
-  </div>
+  <!-- <div class="col-sm-4">
+
+  </div> -->
+
 </div>

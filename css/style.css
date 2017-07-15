@@ -3,22 +3,39 @@ body{
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  width: 100%;
+  height: 100%;
 }
 @keyframes backgroundColorChange {
   from {background-color: peachpuff}
     to{background-color: lightgray}
 }
+#nav{
+  background-color: black;
+  font-size: 20px;
+  padding-left: 5%;
+}
 #myPhoto{
-  width:300px;
-  height:300px;
+  width:100%;
+  height:80%;
 }
-#proverb{
-text-indent: 350px;
+#ng{
+  width:70%;
+  padding-top: 15 %;
+}
+#homepage_left{
+  float: left;
+  width: 30%;
+}
+#homepage_right{
+  float: right;
+  width: 65%;
+  height: 40%;
+}
+h1{
+color: green;
+text-align: center;
 font-weight: 600;
-}
-#homepage_paragaraph{
-  font-weight: 600;
-  text-align: center;
 }
 .resume{
   display: flex;
@@ -27,10 +44,6 @@ font-weight: 600;
   background-color: black;
   color: white;
 }
-/*#js{
-  position: absolute;
-  left: 35%
-}*/
 @-webkit-keyframes resume_animation {
   0% {
     background-image: url("http://i.imgur.com/fVpzk6R.png");
@@ -59,6 +72,10 @@ font-weight: 600;
   opacity: 0.0;
 filter: alpha(opacity=50);
 }
-.col-sm-4 img {
-width:300px;
+img#tedpark{
+  width:350px;
+}
+img#beermood{
+  width: 820px;
+  height: auto;
 }
