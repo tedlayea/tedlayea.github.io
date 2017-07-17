@@ -1,24 +1,16 @@
 <div class="resume">
-  <!-- <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Click here to choose
-    </button>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-
-      <li class="divider"></li>
-      <li><input ng-model="vm.display" type="radio" name="optionselect" ng-value=6 >VOLUNTEER ACTIVITY</li>
-    </ul>
-  </div><br> -->
-  <h3><input ng-model="vm.display" type="radio" name="optionselect" ng-value=1 >TECHNICAL SKILLS
-  <input ng-model="vm.display" type="radio" name="optionselect" ng-value=2 >RELEVANT EXPERIENCE
-  <input ng-model="vm.display" type="radio" name="optionselect" ng-value=3 >PROFESSIONAL EXPERIENCE
-  <input ng-model="vm.display" type="radio" name="optionselect" ng-value=5 >CERTIFICATION
-  <input ng-model="vm.display" type="radio" name="optionselect" ng-value=4 >EDUCATION</h3>
+  <p>
+    <input ng-model="vm.display" type="radio" name="optionselect" ng-value=1 > TECHNICAL SKILLS
+    <input ng-model="vm.display" type="radio" name="optionselect" ng-value=2 > WEB DEVLOPMENT EXPERIENCE
+    <input ng-model="vm.display" type="radio" name="optionselect" ng-value=3 > PROFESSIONAL EXPERIENCE
+    <input ng-model="vm.display" type="radio" name="optionselect" ng-value=4 > EDUCATION
+    <input ng-model="vm.display" type="radio" name="optionselect" ng-value=5 > CERTIFICATION
+  </p>
 </div>
-<!-- <img   src="img/header.png" alt="Tedla photo displayed"> -->
+
 <div ng-hide="vm.display" id="resume_image">
     <img  src="img/white.png" alt="header photo displayed">
 </div>
-
 
 <div ng-show="vm.display=='1'">
   <h2>TECHNICAL SKILLS</h2>
@@ -33,7 +25,7 @@
 
 <div ng-show="vm.display=='2'">
   <div >
-    <h2>RELEVANT EXPERIENCE</h2>
+    <h2>WEB DEVLOPMENT EXPERIENCE</h2>
     <h4>General Assembly, Washington, DC</h4>
     <h4>Web Development Immersive Student</h5>
     <h5>May 2017 – July 2017</h5>
@@ -60,6 +52,7 @@
     </ul>
   </div>
 </div>
+
 <div ng-show="vm.display=='3'">
   <h2>PROFESSIONAL EXPERIENCE</h2>
   <h4>Jimma University, Jimma, Ethiopia</h4>

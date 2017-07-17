@@ -4,38 +4,22 @@ body{
   animation-iteration-count: infinite;
   animation-direction: alternate;
   width: 100%;
-  height: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
 }
 @keyframes backgroundColorChange {
   from {background-color: peachpuff}
-    to{background-color: lightgray}
+  to {background-color: lightgray}
 }
 #nav{
   background-color: black;
-  font-size: 20px;
-  padding-left: 5%;
+  font-size: 18px;
+  text-align: center;
 }
-#myPhoto{
-  width:100%;
-  height:80%;
-}
-#ng{
-  width:70%;
-  padding-top: 15 %;
-}
-#homepage_left{
-  float: left;
-  width: 30%;
-}
-#homepage_right{
-  float: right;
-  width: 65%;
-  height: 40%;
-}
-h1{
-color: green;
-text-align: center;
-font-weight: 600;
+div{
+  width: 100%;
+  text-align: center;
 }
 .resume{
   display: flex;
@@ -43,6 +27,13 @@ font-weight: 600;
   font-size: 20px;
   background-color: black;
   color: white;
+  justify-content: space-between;
+}
+.projects{
+  font-size: 20px;
+}
+.projects img{
+  width: 95%;
 }
 @-webkit-keyframes resume_animation {
   0% {
@@ -72,10 +63,25 @@ font-weight: 600;
   opacity: 0.0;
 filter: alpha(opacity=50);
 }
-img#tedpark{
-  width:350px;
+#myPhoto{
+  width:100%;
+  height:30%;
 }
-img#beermood{
-  width: 820px;
-  height: auto;
+#ng{
+  width:100%;
+  padding-top: 15 %;
+}
+#homepage_left{
+  float: left;
+  width: 30%;
+}
+#homepage_right{
+  float: right;
+  width: 65%;
+  height: 40%;
+}
+h1{
+color: green;
+text-align: center;
+font-weight: 600;
 }

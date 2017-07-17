@@ -1,27 +1,14 @@
-<div class="section">
-  <input ng-model="vm.employer" type="radio" name="optionselect" ng-value=false >Are you employer, looking for a great devloper:
-</br><input ng-model="vm.employer" type="radio" name="optionselect" ng-value=true >  Are you client, business man or any professional who want to build or enhance your webite?
-
-  <div ng-hide="vm.employer">
-    <p>Your name :<input ng-model="vm.name" value="0"></p>
-    <p>Your company :<input ng-model="vm.company" value="0"></p>
-    Your message :<textarea ng-model="vm.message" value="0"></textarea>
-   </br><button ng-click="vm.sendemail()">Send</button>
-    <!-- <a href="#"> Send</a> //Associate this with your email -->
-    <p ng-show="vm.notice">As per this result, {{vm.message}}</p>
-  </div>
-  <div ng-show="vm.employer">
-    <p>Your name :<input ng-model="vm.name" value="0"></p>
-    <p>Your buiness /profession :<input ng-model="vm.company" value="0"></p>
-    Your message :<textarea ng-model="vm.message" value="0"></textarea>
-    </br><button ng-click="vm.sendemail()">Send</button>
-    <!-- <a href="#"> Send</a> //Associate this with your email -->
-    <p ng-show="vm.notice">As per this result, {{vm.message}}</p>
+<div>
+  <h3>Are you client, business man or any professional who want to build or enhance your webite?</h3>
+  <h3>Are you employer, looking for a great devloper:</h3>
+  <h3>Just drop me a short message, and I will reply you very soon.</h3>
+  <div  id="contact">
+    <h4>Your name :<br><input placeholder="Enter your name here..." ng-model="vm.name"></h4>
+    <h4>Your email :<br><input placeholder="Enter your email here..." ng-model="vm.email"></h4>
+    <h4>Your company/ business :<br><input placeholder="Enter your company here..." ng-model="vm.company" ></h4>
+    <h4>Your message :<br><textarea placeholder="Enter your message here..." ng-model="vm.message" ></textarea></h4>
+    </br>
+    <h4><button ng-click="vm.sendemail()">Send</button></h4>
+    <a href="mailto:tedlayea@gmail.com?Subject=Hello%20again" target="_top">Send Mail</a>
   </div>
 </div>
-
-
-<!-- <li><img  id="js"src="img/js.png" alt="Tedla photo displayed"></li> -->
-
-<!-- <a href="mailto:tedlayea@gmail.com?Subject=Hello%20again" target="_top">Send Mail</a>
-</p> -->
