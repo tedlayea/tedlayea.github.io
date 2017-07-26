@@ -11,7 +11,7 @@ body{
 
   /*height: auto;*/
   /*align-items: center;*/
-  /*justify-content: space-between;*/
+  justify-content: space-between;
   text-align: center;
 }
 @keyframes backgroundColorChange {
@@ -30,7 +30,7 @@ body{
   flex-direction: row;
 }
 #myPhoto,#ng{
-  width:100%;
+  width:90%;
 }
 
 h1{
