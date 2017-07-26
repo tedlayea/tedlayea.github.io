@@ -1,9 +1,9 @@
 //jquery
 
-$("Tedla").on("apply", accept)
-function accept(){
-  $("Tedla").css("status","high_salary")
-}
+// $("Tedla").on("apply", accept)
+// function accept(){
+//   $("Tedla").css("status","high_salary")
+// }
 
 
 angular
@@ -41,9 +41,9 @@ function RouterFunction($stateProvider){
    controller: "homepageController",
    controllerAs: "vm"
 })
-.state("contact", {
-  url: "/contact",
-  templateUrl: "ng-views/contact.html",
+.state("sourceCode", {
+  url: "/sourceCode",
+  templateUrl: "ng-views/sourceCode.html",
   controller: "contactController",
   controllerAs: "vm"
 })
