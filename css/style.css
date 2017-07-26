@@ -4,9 +4,14 @@ body{
   animation-iteration-count: infinite;
   animation-direction: alternate;
   width: 100%;
-  height: auto;
-  align-items: center;
-  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  /*height: auto;*/
+  /*align-items: center;*/
+  /*justify-content: space-between;*/
   text-align: center;
 }
 @keyframes backgroundColorChange {
@@ -17,16 +22,20 @@ body{
   background-color: black;
   font-size: 18px;
 }
-footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
 #icon{
   width: 50px;
 }
-div{
-  width: 100%;
+#home{
+  display: flex;
+  flex-direction: row;
+}
+#myPhoto,#ng{
+  width:100%;
+}
+
+h1{
+color: green;
+font-weight: 600;
 }
 .resume{
   display: flex;
@@ -69,25 +78,4 @@ div{
 #resume_image img {
   opacity: 0.0;
 filter: alpha(opacity=50);
-}
-#myPhoto{
-  width:100%;
-  height:30%;
-}
-#ng{
-  width:100%;
-  padding-top: 15 %;
-}
-#homepage_left{
-  float: left;
-  width: 30%;
-}
-#homepage_right{
-  float: right;
-  width: 65%;
-  height: 40%;
-}
-h1{
-color: green;
-font-weight: 600;
 }
