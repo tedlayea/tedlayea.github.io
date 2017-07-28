@@ -14,19 +14,34 @@
   </head>
   <body >
     <nav id="nav">
-      <a href="/#/"> Home </a> |
+      <a href="index.html"> Home </a> |
       <a href="/#/resume">Resume</a> |
-      <a href="/#/projects">Projects</a> |
-      <a href="/#/sourceCode">Source Code</a>
+      <a href="/#/projects">Projects</a>
     </nav>
 
     <main ui-view>
+      <div ng-hide="vm.home">
+        <h2>Welcome</h2>
+        <h3> "Live as if you die tomorrow. Learn as if you live forever." Mahatma Gandhi<hr></h3>
+        <div id="home">
+          <img id="myPhoto" src="img/my_picture.jpg" alt="Tedla photo">
+          <div>
+            <h3>Are you looking for awesome Web Developer or Full Stack Developer?<hr></h3>
+            <h3>Yes, you come to the right person!!!<hr><hr></h3>
+            <h1> Tedla Alemu</h1>
+            <h4>GA Graduate</h4>
+            <img id ="tedla_tag" src="img/ng-repeat.png" alt="header photo">
+          </div>
+        </div>
+        <h3>Skilled and confident front-end developer who is eager to learn new technologies to bring out the best possible solution. <hr>I value team members and collaborate in multi-cultural environments to achieve the desired goal.</h3>
+      </div>
     </main>
 
     <footer>
-      Contact me through: tedlayea@gmail.com | <span><a href="https://www.linkedin.com/in/tedlayea/"><img id="icon" src="img/linkedin_icon.png" alt="Linkedin icon"></a> </span> |
-      <span><a href="https://profiles.generalassemb.ly/profiles/tedlayea"><img id="icon" src="img/GA_icon.png" alt="General assembly icon"></a> </span> |
-      <span><a href="https://github.com/tedlayea"><img id="icon" src="img/github_icon.png" alt="Githhub icon"></a> </span>
+      Contact: tedlayea@gmail.com
+      <a href="https://www.linkedin.com/in/tedlayea/"><img id="icon" src="img/linkedin_icon.png" alt="Linkedin icon"></a> |
+      <a href="https://profiles.generalassemb.ly/profiles/tedlayea"><img id="icon" src="img/GA_icon.png" alt="General assembly icon"></a> |
+      <a href="https://github.com/tedlayea"><img id="icon" src="img/github_icon.png" alt="Githhub icon"></a>
     </footer>
   </body>
 

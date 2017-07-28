@@ -1,97 +1,116 @@
-<div class="resume">
-  <p>
-    <input ng-model="vm.display" type="radio" name="optionselect" ng-value=1 > TECHNICAL SKILLS
-    <input ng-model="vm.display" type="radio" name="optionselect" ng-value=2 > WEB DEVLOPMENT EXPERIENCE
-    <input ng-model="vm.display" type="radio" name="optionselect" ng-value=3 > PROFESSIONAL EXPERIENCE
-    <input ng-model="vm.display" type="radio" name="optionselect" ng-value=4 > EDUCATION
-    <input ng-model="vm.display" type="radio" name="optionselect" ng-value=5 > CERTIFICATION
-  </p>
-</div>
+<div id="resume">
+  <div class="resume_nav">
+    <button ng-click="vm.skills()">SKILLS</button>
+    <button ng-click="vm.web()">WEB DEVELOPMENT EXPERIENCE</button>
+    <button ng-click="vm.other()">OTHER EXPERIENCE</button>
+    <button ng-click="vm.education()">EDUCATION... </button>
+    <a href="img/Tedla_full_stack_resume.pdf" download><img id="icon"src="img/download_resume.png" alt="resume download"> </a>
+  </div>
 
-<div ng-hide="vm.display" id="resume_image">
-    <img  src="img/white.png" alt="header photo displayed">
-</div>
+  <div>
+    <div ng-hide="vm.display">
+      <img id ="tedla_tag" src="img/header.png" alt="header photo">
+      <div id="skill_list" >
+        <div class="skill_group">Frontend
+          <img src="http://i.imgur.com/O7RzVRC.png" alt="html logo">
+          <img src="http://i.imgur.com/Fee5Iae.png" alt="css logo">
+          <img src="http://i.imgur.com/dvfv89e.png" alt="javascript logo">
+          <img src="http://i.imgur.com/hSGEhzI.png" alt="jQuery logo">
+          <img src="http://i.imgur.com/r6z47dL.png" alt="bootstrap logo">
+          <img src="http://i.imgur.com/tM6B5lR.png" alt="angular logo">
+          <img src="http://i.imgur.com/lo8EqKO.png" alt="react logo">
+        </div>
+        <div class="skill_group">Backend/ Fullstack
+          <img src="http://i.imgur.com/DgONDdI.jpg" alt="ruby logo">
+          <img src="http://i.imgur.com/18tYgiT.png" alt="rails logo">
+          <img src="http://i.imgur.com/IUvQkGF.jpg" alt="meanstack logo">
+        </div>
 
-<div ng-show="vm.display=='1'">
-  <h2>TECHNICAL SKILLS</h2>
-  <ul class="list-group">
-    <li class="list-group-item">Front-end: HTML | CSS | JavaScript | jQuery | Bootstrap</li>
-    <li class="list-group-item">Back-end: Ruby | Sinatra | Ruby on Rails | Angular | Express | MEAN | REACT</li>
-    <li class="list-group-item">Database: MS-SQL Server | PostgreSQL | MS Access</li>
-    <li class="list-group-item">Other Tools: CLI | MS Office | Project Management | Git | Github | Visual Studio</li>
-    <li class="list-group-item">Platforms: Windows | Linux | Mac OS </li>
-  </ul>
-</div>
+        <div class="skill_group">Database
+          <img src="http://i.imgur.com/BhoXQYh.png" alt="postgresql logo">
+          <img src="http://i.imgur.com/P1MTPhi.png" alt="mongodb logo">
+          <img src="http://i.imgur.com/6NGIFU5.jpg" alt="Ms-sql server logo">
+        </div>
+        <div class="skill_group">Other
+          <img src="http://i.imgur.com/113H0l2.jpg" alt="git logo">
+          <img src="http://i.imgur.com/BLnIJHF.jpg" alt="github logo">
+          <img src="http://i.imgur.com/ZZUZwIO.png" alt="agile-scrum photo">
+          <img src="http://i.imgur.com/qOhAfhh.jpg" alt="selenuim photo">
 
-<div ng-show="vm.display=='2'">
-  <div >
-    <h2>WEB DEVLOPMENT EXPERIENCE</h2>
-    <h4>General Assembly, Washington, DC</h4>
-    <h4>Web Development Immersive Student</h5>
-    <h5>May 2017 – July 2017</h5>
-    <ul class="list-group">
-      <li class="list-group-item">Twelve-week full-time full-stack Web Development Immersive program providing experience with the latest front-end and back-end programming languages tools, and frameworks including HTML, CSS,Javascript, Ruby, jQuery, PostgreSQL, MongoDB, Ruby on Rails, AngularJS, Express with Mongoose, ReactJS, Git, and Github.</li>
-      <li class="list-group-item"> Developed a personal portfolio and also four individual and collaboratively focused in-class projects.
-        <ul>
-          <li class="list-group-item">1.Hangman game in which players can spend their time testing their knowledge about world heritage. Depending on the number of errors, different animations will be displayed. </li>
-          <li class="list-group-item">2. A web application that helps you to remember where you parked. It saves the car location and takes you to your car from any other position with just one click. You can see your recent history, and manage your favorite parking spots. </li>
-          <li class="list-group-item">3.A web application that prevents you from driving under the influence by checking your blood alcohol content after you drink, or suggest how much you have to drink in order to be safe. It also recommends you breweries and beer based on your current location, alcohol by volume (abv) and international bitterness unit (IBU). </li>
+        </div>
+        <div class="skill_group">Platforms
+          <img src="http://i.imgur.com/SilenNi.png" alt="window photo">
+          <img src="http://i.imgur.com/7Wd5G9Y.jpg" alt="linux photo">
+          <img src="http://i.imgur.com/OrgODPz.png" alt="mac photo">
+        </div>
+      </div>
+    </div>
+
+    <div ng-show="vm.display=='1'">
+      <div >
+        <h2>WEB DEVLOPMENT EXPERIENCE</h2>
+        <h4>General Assembly, Washington, DC</h4>
+        <h4>Web Development Immersive Student</h5>
+        <h5>May 2017 – July 2017</h5>
+        <ul class="list-group">
+          <li class="list-group-item">Twelve-week full-time full-stack Web Development Immersive program providing experience with the latest front-end and back-end programming languages tools, and frameworks including HTML, CSS, JavaScript, Ruby, jQuery, PostgreSQL, MongoDB,  Ruby on Rails, Angular.js, Express.js, Mongoose, React.js, Git, and Github.</li>
+          <li class="list-group-item"> Developed a personal portfolio and also four individual and collaboratively focused in-class projects.
+            <ul>
+              <li class="list-group-item">1.Hangman game in which players can spend their time testing their knowledge about world heritage. Depending on the number of errors, different animations will be displayed. Technologies used in this project are HTML, CSS, JavaScript, and jQuery.  </li>
+              <li class="list-group-item">A web application that helps you to remember where you parked. It saves the car location and takes you to your car from any other position with just one click. You can see your recent history, and manage your favorite parking spots. The technologies used in this project includes JavaScript, Bootstrap, ActiveRecord, Ruby on Rails PostgreSQL and Heroku. </li>
+              <li class="list-group-item">3.A web application that prevents you from driving under the influence by checking your blood alcohol content after you drink, or suggest how much you have to drink in order to be safe. It also recommends you breweries and beer based on your current location, alcohol by volume (abv) and international bitterness unit (IBU). In this project, we used Ruby on Rails for the back-end Angular.js for the front-end, and PostgreSQL for the database. </li>
+            </ul>
+          </li>
         </ul>
-      </li>
-    </ul>
-  </div>
+      </div>
 
-  <div >
-    <h4>Jimma University, Jimma, Ethiopia</h4>
-    <h5>Mar 2015 - Feb 2016 </h5>
-    <ul class="list-group">
-      <li class="list-group-item"> Designed different functionality and interface for a website to facilitate learning-teaching system.</li>
-      <li class="list-group-item">Created website using different tools in order to fulfill the requirement listed in the design phase.</li>
-      <li class="list-group-item">Tested the website functionality before production and during the production phase.</li>
-      <li class="list-group-item"> Technologies used include HTML, CSS, draw.io and Selenium WebDriver.</li>
-  </ul>
-  </div>
-</div>
+      <div >
+        <h4>Jimma University, Jimma, Ethiopia</h4>
+        <h5>Mar 2015 - Feb 2016 </h5>
+        <ul class="list-group">
+          <li class="list-group-item"> Designed different functionality and interface for a website to facilitate learning-teaching system.</li>
+          <li class="list-group-item">Created website using different tools (HTML, CSS, and draw.io ) in order to fulfill the requirement listed in the design phase.</li>
+          <li class="list-group-item">Tested the website functionality before production and during the production phase manually and also using Selenium  WebDriver.</li>
+        </ul>
+      </div>
+    </div>
 
-<div ng-show="vm.display=='3'">
-  <h2>OTHER PROFESSIONAL EXPERIENCE</h2>
-  <h4>Jimma University, Jimma, Ethiopia</h4>
-  <h4>Instructor and Researcher</h4>
-  <h5>2015-2016 and 2011- 2012</h5>
-  <ul class="list-group">
-    <li class="list-group-item"> Delivered three courses for engineering students ranging from first-year to third-year students.</li>
-    <li class="list-group-item"> Led a team of six in modularizing and reviewing curriculum to improve the current education system.</li>
-    <li class="list-group-item">Coordinated and managed ten plus courses, programs, and events.</li>
-    <li class="list-group-item">Wrote three plus project and research proposal by collaboration with other Universities and stakeholders.</li>
-    <li class="list-group-item"> Advised 30+ students in their project and solved barriers to their education.</li>
-    <li class="list-group-item">Supervised 20+ students in CBTP program to propose appropriate solutions for the community problems.</li>
-    <li class="list-group-item">Evaluator and moderator for more than 100 plus mini and final year projects.</li>
-    <li class="list-group-item">Experienced in managing 300+ student records in the database such as attendance, evaluations and grading.</li>
-  </ul>
-</div>
+    <div ng-show="vm.display=='2'">
+      <h2>OTHER PROFESSIONAL EXPERIENCE</h2>
+      <h4>Jimma University, Jimma, Ethiopia</h4>
+      <h4>Instructor and Researcher</h4>
+      <h5>2015-2016 and 2011- 2012</h5>
+      <ul class="list-group">
+        <li class="list-group-item"> Delivered three courses for engineering students ranging from first-year to third-year students.</li>
+        <li class="list-group-item"> Led a team of six in modularizing and reviewing curriculum to improve the current education system.</li>
+        <li class="list-group-item">Coordinated and managed ten plus courses, programs, and events.</li>
+        <li class="list-group-item">Wrote three plus project and research proposal by collaboration with other Universities and stakeholders.</li>
+        <li class="list-group-item"> Advised 30+ students in their project and solved barriers to their education.</li>
+        <li class="list-group-item">Supervised 20+ students in CBTP program to propose appropriate solutions for the community problems.</li>
+        <li class="list-group-item">Evaluator and moderator for more than 100 plus mini and final year projects.</li>
+        <li class="list-group-item">Experienced in managing 300+ student records in the database such as attendance, evaluations & grading.</li>
+      </ul>
+    </div>
 
-<div ng-show="vm.display=='4'">
-  <h2>EDUCATION</h2>
-  <ul class="list-group">
-    <li class="list-group-item">General Assembly, Washington, DC, Full Stack Web Development, July 2017</li>
-    <li class="list-group-item">University of Trento, Italy M.Sc. in Engineering, March 2015</li>
-  </ul>
-</div>
-<div ng-show="vm.display=='5'">
-  <h2>CERTIFICATION</h2>
-  <ul class="list-group">
-    <li class="list-group-item">Microsoft Certified in Querying with Transact- SQL, August 2016</li>
-  </ul>
-</div>
-<div ng-show="vm.display=='6'">
-  <h2>VOLUNTEER ACTIVITY</h2>
-  <h4>Jimma City Volunteer Activity Club, Jimma, Ethiopia</h4>
-  <h5>September 2015 – January 2016</h5>
-  <ul class="list-group">
-    <li class="list-group-item"> Initiated and organized continuous awareness creation campaign about waste management and
-environmental protection by organizing more than 150 students, staff, and government officials.</li>
-    <li class="list-group-item">Conducted and analyzed survey to identify community’s problems, and interact with stakeholders.</li>
-    <li class="list-group-item">Performed GAP Analysis to show the current problems and proposed solutions.</li>
-    <li class="list-group-item">Suggested measures to improve and optimize the current system.</li>
-  </ul>
+    <div ng-show="vm.display=='3'">
+      <h2>EDUCATION</h2>
+      <ul class="list-group">
+        <li class="list-group-item">General Assembly, Washington, DC, Full Stack Web Development, July 2017</li>
+        <li class="list-group-item">University of Trento, Italy M.Sc. in Engineering, March 2015</li>
+      </ul>
+      <h2>CERTIFICATION</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Microsoft Certified in Querying with Transact- SQL, August 2016</li>
+      </ul>
+      <h2>VOLUNTEER ACTIVITY</h2>
+      <h4>Jimma City Volunteer Activity Club, Jimma, Ethiopia</h4>
+      <h5>September 2015 – January 2016</h5>
+      <ul class="list-group">
+        <li class="list-group-item"> Initiated and organized continuous awareness creation campaign about waste management and environmental protection by organizing more than 150 students, staff and government officials.</li>
+        <li class="list-group-item">Conducted and analyzed survey to identify community’s problems, and interact with stakeholders.</li>
+        <li class="list-group-item">Performed GAP Analysis to show the current problems and proposed solutions.</li>
+        <li class="list-group-item">Suggested measures to improve and optimize the current system.</li>
+      </ul>
+    </div>
+
 </div>

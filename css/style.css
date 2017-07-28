@@ -8,10 +8,6 @@ body{
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
-  /*height: auto;*/
-  /*align-items: center;*/
-  justify-content: space-between;
   text-align: center;
 }
 @keyframes backgroundColorChange {
@@ -20,7 +16,9 @@ body{
 }
 #nav, footer{
   background-color: black;
-  font-size: 18px;
+  color: white;
+  line-height: 70px;
+  font-size: 25px;
 }
 #icon{
   width: 50px;
@@ -28,54 +26,67 @@ body{
 #home{
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
-#myPhoto,#ng{
-  width:90%;
+#myPhoto{
+  width:40%;
+  height:40%;
+  border-radius: 190px;
 }
-
+#tedla_tag{
+  width:95%;
+}
 h1{
-color: green;
-font-weight: 600;
+  color: green;
+  font-weight: 600;
 }
-.resume{
+#resume{
+  min-height: 100vh;
+}
+button{
+  border-radius: 50%;
+  color: black;
+  border-color: gary;
+  font-size: 16px;
+  background-color: #FFE4C4;
+  color: #006400;
+  font-weight: bold;
+}
+.hide_radio{
+  display: none;
+}
+@keyframes skill_animation {
+  from {bottom: -400px;;}
+    to {bottom: 0px;}
+}
+#skill_list {
   display: flex;
   flex-direction: row;
-  font-size: 20px;
-  background-color: black;
-  color: white;
   justify-content: space-between;
+  margin: 2%;
+  position: relative;
+  animation: skill_animation 10s infinite;
 }
-.projects{
-  font-size: 20px;
-}
-.projects img{
+#skill_list img {
   width: 95%;
 }
-@-webkit-keyframes resume_animation {
-  0% {
-    background-image: url("http://i.imgur.com/fVpzk6R.png");
-  }
-  60% {
-    background-image: url("http://i.imgur.com/TmyhkyU.png");
-  }
-  80% {
-    background-image: url("http://i.imgur.com/fVpzk6R.png");
-  }
-  100% {
-    background-image: url("http://i.imgur.com/fVpzk6R.png");
-  }
+.skill_group{
+  width: 90px;
 }
-
-#resume_image {
-  animation-name: resume_animation;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  /*animation-direction: alternate;*/
-  width: 100%;
-  height: 800px;
+.projects{
+    min-height: 70vh;
 }
-
-#resume_image img {
-  opacity: 0.0;
-filter: alpha(opacity=50);
+#project_image{
+  width: 90%;
+}
+#project_animation{
+    width: 75%;
+}
+#project{
+  width: 25%;
+}
+@media screen and (max-width: 600px){
+  #project {
+    width: 100%;
+  }
 }
