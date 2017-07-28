@@ -1,8 +1,4 @@
 body{
-  animation-name: backgroundColorChange;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
@@ -10,9 +6,9 @@ body{
   flex-direction: column;
   text-align: center;
 }
-@keyframes backgroundColorChange {
-  from {background-color: peachpuff}
-  to {background-color: lightgray}
+main{
+  margin-left: 5%;
+  margin-right: 5%;
 }
 #nav, footer{
   background-color: black;
@@ -29,8 +25,8 @@ body{
   justify-content: center;
 }
 #myPhoto{
-  width:40%;
-  height:40%;
+  width:25%;
+  height:25%;
   border-radius: 190px;
 }
 #tedla_tag{
@@ -39,6 +35,9 @@ body{
 h1{
   color: green;
   font-weight: 600;
+}
+h6{
+  font-size: 10px;
 }
 #resume{
   min-height: 100vh;
@@ -76,17 +75,22 @@ button{
 .projects{
     min-height: 70vh;
 }
+#project{
+  width: 25%;
+}
 #project_image{
-  width: 90%;
+  height: 40vh;
 }
 #project_animation{
     width: 75%;
 }
-#project{
-  width: 25%;
-}
 @media screen and (max-width: 600px){
   #project {
     width: 100%;
+  }
+  #myPhoto{
+    width:40%;
+    height:40%;
+    border-radius: 190px;
   }
 }
