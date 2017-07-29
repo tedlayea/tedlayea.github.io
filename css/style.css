@@ -19,6 +19,19 @@ main{
 #icon{
   width: 50px;
 }
+button{
+  border-radius: 25%;
+  color: black;
+  border-color: gary;
+  font-size: 16px;
+  background-color: #FFE4C4;
+  color: #006400;
+  font-weight: bold;
+  padding: 1%;
+}
+.hide_radio{
+  display: none;
+}
 #home{
   display: flex;
   flex-direction: row;
@@ -36,55 +49,40 @@ h1{
   color: green;
   font-weight: 600;
 }
-h6{
-  font-size: 10px;
-}
 #resume{
-  min-height: 100vh;
-}
-button{
-  border-radius: 25%;
-  color: black;
-  border-color: gary;
-  font-size: 16px;
-  background-color: #FFE4C4;
-  color: #006400;
-  font-weight: bold;
-  padding: 1%;
-}
-.hide_radio{
-  display: none;
+  min-height: 70vh;
 }
 @keyframes skill_animation {
-  from {bottom: -400px;;}
+  from {bottom: -425px;}
     to {bottom: 0px;}
 }
 #skill_list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 2%;
   position: relative;
   animation: skill_animation 10s infinite;
 }
 #skill_list img {
   width: 95%;
+  padding: 5%;
 }
 .skill_group{
   width: 90px;
 }
-.projects{
-    min-height: 70vh;
-}
 #project{
   width: 25%;
 }
+.projects{
+    min-height: 70vh;
+}
 #project_image{
-  height: 40vh;
+  /*height: 40vh;*/
+  width:100%;
 }
-#project_animation{
+/*#project_animation{
     width: 75%;
-}
+}*/
 @media screen and (max-width: 600px){
   #project {
     width: 100%;
@@ -92,7 +90,6 @@ button{
   #myPhoto{
     width:40%;
     height:40%;
-    border-radius: 190px;
   }
 }
 .resume_download {
@@ -102,8 +99,25 @@ button{
   left: 88%;
   background-color:black;
   color: white;
-
 }
 .download:hover .resume_download {
   opacity: 1;
+}
+.box:hover #project_image{
+  opacity: 0;
+}
+.box{
+  background-size: 100%;
+}
+#box1{
+    background-image:url("../img/hangman.gif");
+}
+#box2{
+    background-image:url("../img/tedpark.gif");
+}
+#box3{
+    background-image:url("../img/brewmood.gif");
+}
+#box4{
+    background-image:url("../img/ebusinesscard.gif");
 }

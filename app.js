@@ -25,7 +25,7 @@ function ProjectsControllerFunction(){
 }
 
 function RouterFunction($stateProvider){
-  console.log("Router setupOK ");
+  console.log("Router setup OK ");
   $stateProvider
 .state("resume", {
   url: "/resume",
