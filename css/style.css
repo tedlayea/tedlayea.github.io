@@ -29,6 +29,9 @@ button{
   font-weight: bold;
   padding: 1%;
 }
+a {
+  color: green;
+}
 .hide_radio{
   display: none;
 }
@@ -70,8 +73,13 @@ h1{
 .skill_group{
   width: 90px;
 }
+.row{
+justify-content: center;
+align-content: center;
+align-items: center;
+}
 #project{
-  width: 25%;
+  width: 33%;
 }
 .projects{
     min-height: 70vh;
@@ -107,6 +115,9 @@ h1{
   opacity: 0;
 }
 .box{
+  background-size: 0%;
+}
+.box:hover{
   background-size: 100%;
 }
 #box1{

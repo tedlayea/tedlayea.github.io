@@ -49,7 +49,7 @@
         <img id="project_image" ng-hide="vm.display" src="img/brewmood.png" alt="BeerMood photo">
       </div>
     </div>
-    <div id ="project" class="col-sm-4">
+    <!-- <div id ="project" class="col-sm-4">
       <h3>e-Business Card </h3>
       <p>
         <input class="hide_radio" ng-model="vm.display" type="radio" name="optionselect" ng-value=4 id="des4">
@@ -64,7 +64,44 @@
         <p ng-show="vm.display=='44'">HTML, CSS, Node.js, Express.js, MongoDB, Mongoose, Angular.js, and MongoLab.</p>
         <img id="project_image" ng-hide="vm.display" src="img/ebusinesscard.png" alt="e-Business card photo">
       </div>
-    </div>
+    </div> -->
 </div>
+  <div class="row">
+    <div>
+      <div id ="project" class="col-sm-4">
+        <h3>e-Business Card </h3>
+        <p>
+          <input class="hide_radio" ng-model="vm.display" type="radio" name="optionselect" ng-value=4 id="des4">
+          <button> <label for="des4">Description</label> </button>
+          <input class="hide_radio" ng-model="vm.display" type="radio" name="optionselect" ng-value=44 id="tech4">
+          <button> <label for="tech4">Technology</label> </button>
+          <button><a href="https://e-business-card.herokuapp.com">Demo</a></button>
+          <button> <a href="https://github.com/tedlayea/eBusiness-card">Source Code</a></button>
+        </p>
+        <div class="box" id="box4">
+          <p ng-show="vm.display=='4'"> Individual Project </br> Built in 6 days <br> A web application that stores and organizes business cards electronically rather than using hard copy. It also provides important emergency contacts and weekly meet-up information related to web development.</p>
+          <p ng-show="vm.display=='44'">HTML, CSS, Node.js, Express.js, MongoDB, Mongoose, Angular.js, and MongoLab.</p>
+          <img id="project_image" ng-hide="vm.display" src="img/ebusinesscard.png" alt="e-Business card photo">
+        </div>
+      </div>
+      <div id ="project" class="col-sm-4">
+        <h3>Playing with Tech </h3>
+        <p>
+          <input class="hide_radio" ng-model="vm.display" type="radio" name="optionselect" ng-value=5 id="des5">
+          <button> <label for="des5">Description</label> </button>
+          <input class="hide_radio" ng-model="vm.display" type="radio" name="optionselect" ng-value=55 id="tech5">
+          <button> <label for="tech5">Technology</label> </button>
+          <button><a href="#">Demo</a></button>
+          <button> <a href="https://github.com/tedlayea/play_with_dev_ReactJS">Source Code</a></button>
+        </p>
+        <div class="box" id="box5">
+          <p ng-show="vm.display=='5'"> Individual Project </br> Built in 1 days <br> A playing card game that displays important web development commands as a means to revise players skills. </p>
+          <p ng-show="vm.display=='55'"> HTML, CSS, Node.js, and React.js. </p>
+          <img id="project_image" ng-hide="vm.display" src="img/play_with_dev.png" alt="e-Business card photo">
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </div>
