@@ -5,6 +5,7 @@ body{
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: stretch;
 }
 main{
   margin-left: 5%;
@@ -20,17 +21,17 @@ main{
   width: 50px;
 }
 button{
-  border-radius: 25%;
+  /*border-radius: 25%;*/
   color: black;
   border-color: gary;
   font-size: 16px;
-  background-color: #FFE4C4;
-  color: #006400;
+  background-color: #008CBA;
+  color: white;
   font-weight: bold;
   padding: 1%;
 }
 a {
-  color: green;
+  color: white;
 }
 .hide_radio{
   display: none;
@@ -52,6 +53,9 @@ h1{
   color: green;
   font-weight: 600;
 }
+p{
+  text-align: left;
+}
 #resume{
   min-height: 70vh;
 }
@@ -64,7 +68,9 @@ h1{
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  animation: skill_animation 10s infinite;
+  /*animation: skill_animation 10s infinite;*/
+  animation: skill_animation 10s ;
+
 }
 #skill_list img {
   width: 95%;
