@@ -40,13 +40,14 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /*align-content:space-between;*/
-  /*justify-content:space-around;*/
-  /*align-items: stretch;*/
-  /*justify-content:space-between;*/
+  align-items:center;
+  justify-content:space-between;
+  padding-left: 5%;
+  padding-right: 5%;
 
 }
 #myPhoto{
+  left:0px;
   width:25%;
   height:25%;
   border-radius: 190px;
