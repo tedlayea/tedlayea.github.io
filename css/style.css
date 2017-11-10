@@ -17,6 +17,7 @@ main{
   line-height: 70px;
   font-size: 25px;
 }
+
 #icon{
   width: 50px;
 }
@@ -143,4 +144,7 @@ align-items: center;
 }
 #box4{
     background-image:url("../img/ebusinesscard.gif");
+}
+#box5{
+    background-image:url("../img/play_with_dev.gif");
 }
